@@ -35,3 +35,27 @@ Gradient Boosting: Gradient Boosting uses the prediction from multiple weaker mo
 K-Nearest Neighbors Classification: K-nearest neighbors categorizes new data points based on their similarity to existing labeled data points. The algorithm identifies the k nearest neighbors in the training set to the new data point. The new data point is then assigned the most frequent class label among these k nearest neighbors. So basically, the new point is categorized based on the "majority vote" of its closest neighbors. Since it relies on training data that has labels or variables, it is also a supervised learning training model.
 
 Decision Trees: The decision tree is trained on a dataset with labeled examples. These labels represent the desired outcome you want to predict. They mimic human decision-making by learning a series of yes-or-no questions that ultimately lead to a classification or prediction. Decision trees is a supervised learning training model in which the training data includes labeled examples. These labels provide the algorithm with the desired output for each data point. The algorithm learns the relationship between the input features and the labels, and uses this knowledge to predict labels for new, unseen data.
+
+Results:
+
+Logistic Regression-                                                        
+The results from the logistic regression model show that it performs well in predicting student outcomes with an overall accuracy of 91%. This means that in 91% of cases, the model correctly identified whether students would graduate or drop out.
+
+The precision score for predicting dropouts (class 0.0) is 92%. This means that when the model predicts a student will drop out, it is correct 92% of the time. For predicting graduates (class 1.0), the precision is slightly lower at 91%. This indicates that 91% of the time the model is correct when it predicts a student will graduate.
+
+The recall score for dropouts is 84%, indicating that the model successfully identifies 84% of the actual dropout cases. For graduates, the recall is higher at 95%, meaning the model identifies 95% of the actual graduates correctly.
+
+The F1-score is the weighted average of precision and recall. The F1-score for predicting dropouts is 88%, and for graduates, it is 93%. These F1-scores suggest that the model has a good balance between precision and recall for both cases, with a strong performance in predicting graduates.
+
+The model is strong, with high scores across all metrics, but it performs slightly better at identifying graduates than dropouts.
+
+Random Forest Classifier-
+Accuracy: The model has an accuracy of about 90.2%. This suggests that it correctly predicts the student's outcome (graduate or dropout) in most cases.
+
+Precision: For predicting dropouts (class '0.0'): The precision is 91%, which means that among all the students predicted as dropouts, 91% actually did drop out. For predicting graduates (class '1.0'): The precision is 90%. This means among all the students predicted as graduates, 90% actually did graduate.
+
+Recall: For dropouts: The recall is 83%, this means out of all the actual dropouts, the model predicts 83% correctly. For graduates: The recall is higher at 95%, indicating that the model is quite good at identifying students who will graduate.
+
+F1-Score: For dropouts: An F1-score of 87% suggests a good balance between precision and recall for predicting dropouts. For graduates: An F1-score of 92% suggests that the balance is better for predicting graduates.
+
+The model's performance is strong overall. The higher recall for graduates suggests that the model could be useful for identifying students at risk of not graduating, this can allow a school to provide more support to help particular students out.
